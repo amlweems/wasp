@@ -1,5 +1,10 @@
 # let's keep this short and sweet
 TARGET = wasp
+SOURCE = brute.c asp.c
 all: $(TARGET)
-$(TARGET):
-	gcc -Ofast -o wasp brute.c asp.c
+
+$(TARGET): $(SOURCE)
+	$(CC) -Ofast -o $(TARGET) $(SOURCE)
+
+clean:
+	$(RM) $(TARGET)
