@@ -78,5 +78,6 @@ main(int argc, char **argv) {
         counter++;
     } while (seed != start);
     printf("[-] Seed not found. :(\n");
+    summary(0);
     return 1;
 }
