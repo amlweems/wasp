@@ -24,6 +24,10 @@ double st;
 static inline bool
 Success()
 {
+    /*
+     * Password of form ([a-z][a-z][0-9][!@#]){2}
+     * This example represents: qo6@jl0@
+     */
     return ((Next(0, 26) == 16) &&
             (Next(0, 26) == 14) &&
             (Next(0, 10) ==  6) &&
